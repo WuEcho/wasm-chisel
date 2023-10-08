@@ -1,0 +1,22 @@
+[package]
+name = "libchisel"
+description = "Some useful utilities to transform WebAssembly binaries, most importantly for WebAssembly used in a deterministic / blockchain context"
+version = "0.5.0"
+authors = ["Alex Beregszaszi <alex@rtfs.hu>", "Jake Lang <jak3lang@gmail.com>"]
+license = "Apache-2.0"
+repository = "https://github.com/wasmx/wasm-chisel"
+homepage = "https://github.com/wasmx/wasm-chisel"
+categories = ["webassembly", "development tools"]
+keywords = ["webassembly", "wasm", "blockchain", "ethereum"]
+edition = "2018"
+
+[dependencies]
+parity-wasm = "^0.35.6"
+rustc-hex = "1.0"
+byteorder = "1.2.4"
+failure = "0.1.5"
+wabt = { version = "0.8.0", optional = true }
+wasm-snip = "0.2.0"
+
+[features]
+default = []
